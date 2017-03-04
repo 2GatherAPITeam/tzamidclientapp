@@ -3,9 +3,11 @@ loginModule.service("loginService", loginService);
 function loginService() {
 
     var self = this;
+
     self.loginUser = function(username){
         //goes to db and verifies that there is user like the one inserted
-        if(username == "b"){
+
+        if(username == "שלומי"){
             self.userLogedIn = {
                 username: username,
                 userType: "ADMIN",
@@ -20,7 +22,6 @@ function loginService() {
         }else{
             self.userLogedIn = "nouser";
         }
-
         return self.userLogedIn;
     };
 
