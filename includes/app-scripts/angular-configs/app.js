@@ -19,6 +19,11 @@ modelComperatorApp.config(function($stateProvider, $urlRouterProvider) {
             controller : 'homeController as hm',
             templateUrl : 'includes/views/home/home.html'
         })
+        .state('chat', {
+            url: "/chat",
+            controller : 'chatController as ct',
+            templateUrl : 'includes/views/chat/chat.html'
+        })
         .state('login', {
             url: "/login",
             controller : 'loginController as lg',

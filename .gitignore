@@ -4,4 +4,8 @@ target/
 tzamidapp.iml
 WEB-INF
 bower_components
-
+bin/app.js
+node_modules/
+package.json
+routes/
+bin/
