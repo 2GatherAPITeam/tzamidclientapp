@@ -1,0 +1,7 @@
+.idea
+out/
+target/
+tzamidapp.iml
+WEB-INF
+bower_components
+
