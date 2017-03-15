@@ -1,13 +1,14 @@
 chatModule.controller('chatController', chatController);
 
-function chatController(loginService, $window, $http, $scope) {
+function chatController() {
 
     var self = this;
-    self.commands = {
-        'yaniv':function(){
 
-        }
+    self.chat = getChatInstace();
+    self.options = {
+        height:10,
+        width:200,
+        id:"#chat-instance"
     };
-
-    initVoiceCommands(self.commands);
+    self.chat.init(self.options);
 }
